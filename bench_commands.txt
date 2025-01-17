@@ -1,0 +1,20 @@
+To initialize new bench instance(project), run the following command:
+bench init <bench_name> <version_name(optional)>
+
+Commands
+--------
+bench --version      -> show bench version
+bench --help         -> show all bench commands and help
+bench restart        -> Restart all bench service
+bench backup         -> Create a backup of the default site
+bench migrate        -> Run patches, sync schema and rebuild files/transactions
+
+Development
+-----------
+bench new-app <app_name>              -> creates a new app
+bench get-app <repo_link>             -> downloads an app from git repository and installs it
+bench install-app <app_name>          -> installs an existing app
+bench uninstall-app <app_name>        -> delete an app and everything linked to the app
+bench new-site <site_name>            -> creates a new site
+bench use <site_name>                 -> sets a default site
+bench drop <site_name>                -> removes site from disk and database 

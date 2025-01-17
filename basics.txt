@@ -1,0 +1,49 @@
+Frappe Framework
+----------------
+The Frappe Framework is a full-stack, open-source web application framework written in Python. It is known for being the foundation of ERPNext, a popular open-source ERP system. Frappe is designed to make the development of database-driven applications efficient, with a focus on simplicity and flexibility.
+
+Key Features of Frappe Framework:
+---------------------------------
+Full-Stack Framework:
+Combines backend (Python) and frontend (JavaScript).
+Offers an integrated development environment for seamless application development.
+
+Model-View-Controller (MVC) Architecture:
+Model: Represents database objects using the Doctype system.
+View: Built with templating and reactive JavaScript.
+Controller: Manages business logic written in Python and JavaScript.
+
+Doctype:
+Central to Frappe applications, a Doctype is a metadata-driven way of defining models, forms, and their behavior. It helps developers focus on business logic rather than mundane CRUD operations.
+
+Built-in Features:
+User authentication and access control.
+RESTful APIs for easy integration.
+Role-based permissions.
+Real-time updates using WebSockets.
+
+Developer-Friendly Tools:
+A command-line interface (Bench) to manage projects, apps, and deployments.
+A robust admin dashboard to manage configurations and logs.
+Built-in support for workflows and custom scripting.
+
+Customizability and Extensibility:
+Easily extendable with custom apps.
+Hooks for server-side and client-side scripting.
+Seamless integration with third-party libraries and tools.
+
+Front-End:
+Uses Jinja2 templating for server-side rendering.
+Supports Vue.js and other modern JavaScript frameworks for building reactive interfaces.
+
+Database Support:
+Primarily uses MariaDB/MySQL.
+
+Community and Ecosystem:
+Active community contributing plugins, documentation, and support.
+Extensive documentation for both beginners and experienced developers.
+
+Bench
+-----
+Bench is a command line tool to manage frappe apps and site.
+It provides an easy interface to help you set up and manage multiple sites and apps based on frappe framework.

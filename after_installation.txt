@@ -1,0 +1,14 @@
+After successfully installing frappe bench you can follow below steps....
+
+To create a bench folder(project) you can use this command. All the bench command are only useful when you are inside this bench folder.
+command:
+bench init <bench_name> --frappe-branch version-15
+
+This will create a bench folder, inside which we will develop everything.
+Frappe is the default app.
+
+To create a site with database postgres use below command
+command:
+bench new-site mysite.local --db-type postgres --install-app frappe
+
+if you don't want to use postgres instead want to use default database mariadb/mysql you can use above command without --db-type flag

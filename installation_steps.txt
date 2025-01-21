@@ -1,0 +1,41 @@
+Steps to install frappe bench along with creating sites and apps
+Prerequisites:
+python 3.6+
+Node.Js 14+
+redis 5
+mariadb 10.3.x / postgres 9.5.x +
+yarn 1.12+
+pip 20+
+wkhtmltopdf
+cron
+nginx
+
+step-1
+------
+Genrally we install frappe bench in Linux, if we want to install it in Windows then we use wsl to install it.
+
+Install git:
+sudo apt-get install git
+
+Install python-dev:
+sudo apt-get install python-dev
+
+Install setuptools and pip:
+sudo apt-get install python3-setuptools python3-pip
+
+Install virtualenv:
+sudo apt-get install virtualenv
+
+Install Mariadb or Postgres that you want to use:
+Note: if you are using Ubuntu 22+ then just simply run these commands to install mariadb or postgres
+sudo apt-get install mariadb-server
+or-
+sudo apt-get install postgresql postgresql-contrib
+
+and if you are using some version lower than Ubuntu 22+ then follow those steps accordingly.
+You have to rememmber passwords that you give while setting up databases
+
+Install redis:
+sudo apt-get install redis-server
+
+

@@ -12,3 +12,4 @@ command:
 bench new-site mysite.local --db-type postgres --install-app frappe
 
 if you don't want to use postgres instead want to use default database mariadb/mysql you can use above command without --db-type flag
+After this you can check all commands and use those according to your need.

@@ -17,4 +17,13 @@ bench install-app <app_name>          -> installs an existing app
 bench uninstall-app <app_name>        -> delete an app and everything linked to the app
 bench new-site <site_name>            -> creates a new site
 bench use <site_name>                 -> sets a default site
-bench drop <site_name>                -> removes site from disk and database 
+bench drop-site <site_name>           -> removes site from disk and database 
+
+bench set-config [key] [value]        -> add a key value pair to sites config
+ex- bench set-config developer_mode 1
+
+bench clear-cache                     -> clear the cache
+bench --site <site_name> mariadb      -> Open mariadb console for the site
+bench --site <site_name> postgres     -> Open postgresql console for the site
+
+bench start                           -> Start frappe development server - default port is 8000

@@ -33,7 +33,15 @@ If you want to create a website using frappe you can install already available f
 
 To create portal pages then you can add pages in www folder available inside an app folder, if not create one www folder and create pages like this....suppose you want to create a page named about us then youshould create about_us.html and about_us.py file both...
 
-To create table/docTypes you can go to buildoption of frappe app and create doctypes by following steps shown on the page.
+To create table/docTypes you can go to build option of frappe app and create doctypes by following steps shown on the page.
 Sometimes in doctypes you want to modify a field value automatically in order to do that you can add custom script or client script available in the connection tab of a doctype.
 Ex- suppose you have two field quantity and price and you want to calculate total price by multiply value entered in both these field so you can create a client script for this...
 All these client script are get stored in the database if you want to store these in files then you can use bench export-fixtures command.
+
+Note - If you add anything like Views: report, print format etc., Workflows: workflow, notifications etc., Customizations: Clint scripts, server scripts etc. you have to add those in hooks.py file like this:
+fixtures = [
+  "Client Script",
+  "Workflow",
+  # Add options that you want to add
+]
+then run command: bench export-fixtures

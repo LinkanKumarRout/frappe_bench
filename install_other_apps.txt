@@ -1,0 +1,41 @@
+For installing other apps in your site you can follow these steps:
+
+step-1
+------
+First download the desired app, in order to do that first go inside your bench directory then put below command
+
+bench get-app <app_repo_link>
+
+this command will download the required app, you can check in your apps directory for your confirmation.
+
+step-2
+-------
+Now we can install that app into our site using below command.
+
+bench --site your_site_name install-app app_name
+
+and to uninstall an existing app we can use below command.
+
+bench --site your_site_name uninstall-app app_name
+
+step-3
+------
+For Example if you want to install commit, and raven app here are the procedure
+NOTE- Make sure you have a stable internt connection
+
+Commit App
+-----------
+Run below commands one by one to install commit app, make sure you already created a site and installed frappe app in it
+
+bench get-app https://github.com/The-Commit-Company/commit.git
+bench --site testsite.local install-app commit
+
+NOTE - Migrate all the changes, with bench --site your_site_name migrate, and then stop and start bench to access your app, by going to /app/commit (for example)
+
+Raven App
+----------
+Run below commands one by one to install commit app, make sure you already created a site and installed frappe app in it
+
+bench get-app https://github.com/The-Commit-Company/raven.git
+bench --site testsite.local install-app raven
+

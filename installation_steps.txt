@@ -69,4 +69,17 @@ sudo apt install python3-dev python3-pip python3-setuptools python3-venv redis-s
 Finally Install Frappe Bench:
 pip3 install frappe-bench
 
+if you get any error while installing frappe-bench through pip3 use pipx. follow below steps:
+---------------------------------------------------------------------------------------------
+sudo apt install -y pipx
+
+Enable it:
+pipx ensurepath
+
+Then reload shell:
+source ~/.bashrc
+
+pipx install frappe-bench
+
+
 

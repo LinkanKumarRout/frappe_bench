@@ -47,7 +47,16 @@ Install Node.js:
 sudo apt-get install curl
 curl -sL https://nodesource.com/setup_22.x | sudo -E bash -
 sudo apt-get install -y nodejs
+-------------------------------------------
+you can also install node by following these below steps if you get error/difficulties while installing through above approach
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+Then reload shell:
+source ~/.bashrc
 
+nvm install 18
+nvm use 18
+nvm alias default 18
+--------------------------------------------
 Install yarn:
 sudo npm install -g yarn
 
